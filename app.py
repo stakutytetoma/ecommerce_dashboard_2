@@ -43,7 +43,7 @@ def index() -> str:
 @app.route("/api/orders_over_time")
 def orders_over_time() -> Response:
     query = """
-    SELECT order_date, COUNT(order_id) AS num_orders
+    SELECTX order_date, COUNT(order_id) AS num_orders
     FROM orders
     GROUP BY order_date
     ORDER BY order_date;
@@ -62,7 +62,7 @@ def orders_over_time() -> Response:
 def low_stock_levels() -> Response:
     query = """
     SELECT p.product_name, s.quantity
-    FROM stock_level s
+    FROM stock_levels
     JOIN products p ON s.product_id = p.product_id
     ORDER BY s.quantity ASC;
     """
