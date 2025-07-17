@@ -9,3 +9,44 @@ INFO:werkzeug: * Debugger PIN: 132-287-519
 INFO:werkzeug: * Detected change in 'c:\\Users\\toma.stakutyte\\OneDrive - Adecco\\Personal Development\\DTSP\\Flask app\\ecommerce_dashboard\\app.py', reloading
 WARNING:werkzeug: * Debugger is active!
 INFO:werkzeug: * Debugger PIN: 132-287-519
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 124-514-833
+INFO:werkzeug:127.0.0.1 - - [17/Jul/2025 10:46:34] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Jul/2025 10:46:34] "GET /static/dashboard_stylesheet.css HTTP/1.1" 200 -
+ERROR:root:Database error: no such table: stock_levels
+INFO:werkzeug:127.0.0.1 - - [17/Jul/2025 10:46:34] "[35m[1mGET /api/low_stock_levels HTTP/1.1[0m" 500 -
+ERROR:root:Database error: near "SELECTX": syntax error
+ERROR:root:Error in /api/orders_over_time: 500 Internal Server Error: Database error occurred.
+INFO:werkzeug:127.0.0.1 - - [17/Jul/2025 10:46:35] "[35m[1mGET /api/orders_over_time HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [17/Jul/2025 10:46:35] "GET /api/most_popular_products HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 113-069-091
+INFO:werkzeug:127.0.0.1 - - [17/Jul/2025 10:49:32] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Jul/2025 10:49:32] "[36mGET /static/dashboard_stylesheet.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Jul/2025 10:49:33] "GET /api/orders_over_time HTTP/1.1" 200 -
+ERROR:root:Database error: no such table: stock_levels
+INFO:werkzeug:127.0.0.1 - - [17/Jul/2025 10:49:33] "[35m[1mGET /api/low_stock_levels HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [17/Jul/2025 10:49:33] "GET /api/most_popular_products HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\toma.stakutyte\\OneDrive - Adecco\\Personal Development\\DTSP\\Flask app\\ecommerce_dashboard\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 113-069-091
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 113-069-091
+INFO:werkzeug:127.0.0.1 - - [17/Jul/2025 10:53:00] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Jul/2025 10:53:00] "[36mGET /static/dashboard_stylesheet.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Jul/2025 10:53:00] "GET /api/orders_over_time HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Jul/2025 10:53:00] "GET /api/low_stock_levels HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Jul/2025 10:53:00] "GET /api/most_popular_products HTTP/1.1" 200 -
