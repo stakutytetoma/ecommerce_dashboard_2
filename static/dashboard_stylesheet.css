@@ -6,11 +6,17 @@ body {
   background-color: #adc0f5;
 }
 
+body {
+  background-image: url('https://images.freecreatives.com/wp-content/uploads/2016/04/Beautiful-Plain-Website-Background.jpg'); /* Replace 'your-image.jpg' with the path to your image */
+  background-size: cover; /* Ensures the image covers the entire element */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-position: center; /* Centers the image */
+}
 .container {
   width: 100%;
   padding: 0;
   background-color: #fff;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 10px rgba(25, 0, 71, 0.1);
 }
 
 /* Dashboard title */
@@ -19,7 +25,7 @@ body {
   font-size: 24px;
   margin-bottom: 20px;
   padding: 20px 0;
-  background-color: #333;
+  background-color: #0d0141;
   color: #fff;
 }
 
@@ -68,6 +74,6 @@ body {
   text-align: center;
   margin-top: 40px;
   padding: 20px 0;
-  background-color: #333;
+  background-color: #0d0141;
   color: #fff;
 }
