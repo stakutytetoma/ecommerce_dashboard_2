@@ -62,7 +62,7 @@ def orders_over_time() -> Response:
 def low_stock_levels() -> Response:
     query = """
     SELECT p.product_name, s.quantity
-    FROM stock_level AS s
+    FROM stock_level s
     JOIN products p ON s.product_id = p.product_id
     ORDER BY s.quantity ASC;
     """
@@ -77,7 +77,7 @@ def low_stock_levels() -> Response:
 def most_popular_products_new() -> Response:
     query = """
     SELECT p.product_id, p.product_name, SUM(od.quantity_ordered) AS total_quantity
-    FROM order_details AS od
+    FROM order_details od
     JOIN products p ON od.product_id = p.product_id
     GROUP BY p.product_id, p.product_name
     ORDER BY total_quantity DESC
