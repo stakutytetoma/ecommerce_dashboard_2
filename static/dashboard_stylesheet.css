@@ -5,7 +5,7 @@ body {
   padding: 0;
   background-color: #adc0f5;
 }
-
+/* The below code was taken from co-pilot, with a search on how to add a page background in css*/
 body {
   background-image: url('https://images.freecreatives.com/wp-content/uploads/2016/04/Beautiful-Plain-Website-Background.jpg'); /* Replace 'your-image.jpg' with the path to your image */
   background-size: cover; /* Ensures the image covers the entire element */
