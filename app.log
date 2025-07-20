@@ -223,3 +223,7 @@ INFO:werkzeug:127.0.0.1 - - [20/Jul/2025 13:27:11] "[36mGET /static/dashboard_s
 INFO:werkzeug:127.0.0.1 - - [20/Jul/2025 13:27:11] "GET /api/orders_over_time HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [20/Jul/2025 13:27:11] "GET /api/low_stock_levels HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [20/Jul/2025 13:27:11] "GET /api/most_popular_products HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jul/2025 13:29:42] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jul/2025 13:29:42] "[36mGET /static/dashboard_stylesheet.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jul/2025 13:29:42] "GET /api/orders_over_time HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jul/2025 13:29:42] "GET /api/low_stock_levels HTTP/1.1" 200 -
