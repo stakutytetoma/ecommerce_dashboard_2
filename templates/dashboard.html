@@ -192,35 +192,37 @@
                     }
                 });
             });
-// Fetch and render most popular products bar chart
-        fetch('/api/payment_method_popularity')
-            .then(response => response.json())
-            .then(data => {
-                const ctx = document.getElementById('paymentMethodChart').getContext('2d');
-                new Chart(ctx, {
-                    type: 'pie',
-                    data: {
-                        labels: data.methods,
-                        datasets: [{
-                            label: 'Transaction Count',
-                            data: data.counts,
-                            backgroundColor: 'rgba(75, 192, 192, 0.2)',
-                            borderColor: 'rgba(75, 192, 192, 1)',
-                            borderWidth: 1
-                        }]
-                    },
-                    options: {
-                        scales: {
-                            y: {
-                                beginAtZero: true
-                            },
-                            x: {
-                                display: false  // This will hide the x-axis labels
-                            }
-                        }
+            
+fetch('/api/payment_method_popularity')
+    .then(response => response.json())
+    .then(data => {
+        const chartCanvas = document.getElementById('paymentMethodChart');
+        chartCanvas.height = 250; // Match your CSS height
+
+        const ctx = chartCanvas.getContext('2d');
+        new Chart(ctx, {
+            type: 'bar', // Changed from 'pie' to 'bar'
+            data: {
+                labels: data.methods,
+                datasets: [{
+                    label: 'Transaction Count',
+                    data: data.counts,
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: false,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true
                     }
-                });
-            });
+                }
+            }
+        });
+    });
 
     </script>
 </body>

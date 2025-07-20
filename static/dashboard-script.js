@@ -122,7 +122,7 @@ fetchDataAndRenderChart(
   "/api/payment_method_popularity",
   "paymentMethodChart",
   (data) => ({
-    type: "pie",
+    type: "bar",
     data: {
       labels: data.methods,
       datasets: [
@@ -135,7 +135,6 @@ fetchDataAndRenderChart(
     },
     options: {
       responsive: true,
-      height: 100
       scales: {
         x: {
           display: false, // This will hide the x-axis labels

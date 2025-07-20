@@ -46,10 +46,10 @@ body {
 }
 
 /* Adjusting the size of the pie charts */
-#categoryPopularityChart,
-#paymentMethodsChart {
+#paymentMethodChart {
   height: 250px;
 }
+  
 
 /* Adjusting the size of the bar charts */
 #ordersChart,
