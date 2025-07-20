@@ -129,7 +129,7 @@ def product_category_popularity() -> Response:
 def payment_method_popularity() -> Response:
     query = """
     SELECT pm.method_name, COUNT(p.payment_id) AS transaction_count
-    FROM payments p
+    FROM payments AS p
     JOIN payment_methods pm ON p.method_id = pm.method_id
     GROUP BY pm.method_name
     ORDER BY transaction_count DESC;

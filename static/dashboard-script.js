@@ -82,7 +82,7 @@ fetchDataAndRenderChart(
   })
 );
 
-// Revenue Generation Chart
+
 fetchDataAndRenderChart("/api/revenue_generation", "revenueChart", (data) => ({
   type: "line",
   data: {
@@ -117,7 +117,7 @@ fetchDataAndRenderChart(
   })
 );
 
-// Payment Method Popularity Chart
+
 fetchDataAndRenderChart(
   "/api/payment_method_popularity",
   "paymentMethodChart",
@@ -135,6 +135,7 @@ fetchDataAndRenderChart(
     },
     options: {
       responsive: true,
+      height: 100
       scales: {
         x: {
           display: false, // This will hide the x-axis labels
@@ -144,7 +145,7 @@ fetchDataAndRenderChart(
   })
 );
 
-// Temperature Over Time Chart
+// Temperature over time Chart
 fetchDataAndRenderChart(
   "/api/temperature_over_time",
   "temperatureChart",
