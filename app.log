@@ -1006,3 +1006,4 @@ INFO:werkzeug:127.0.0.1 - - [20/Jul/2025 16:48:06] "GET /api/orders_over_time HT
 INFO:werkzeug:127.0.0.1 - - [20/Jul/2025 16:48:06] "GET /api/low_stock_levels HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [20/Jul/2025 16:48:06] "GET /api/most_popular_products HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [20/Jul/2025 16:48:06] "GET /api/payment_method_popularity HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jul/2025 16:48:06] "GET /api/revenue_generation HTTP/1.1" 200 -
